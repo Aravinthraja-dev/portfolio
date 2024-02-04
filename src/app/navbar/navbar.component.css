@@ -1,0 +1,21 @@
+.nav-link{
+    font-family: 'Lucida Console';
+    color: black;
+    margin-right: 20px;
+}
+.btn{
+    font-family: 'Lucida Console';
+    background-color: black;
+    color: white;
+}
+.container-fluid h1{
+    font-size: 35px;
+}
+.container{
+    border-bottom: 1px solid rgba(205, 214, 213, 0.989);
+    padding: 10px;
+}
+.container .collapse{
+    position: relative;
+    left: 90px;
+}

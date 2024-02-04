@@ -1,0 +1,49 @@
+main{
+    height: 700px;
+    padding-top: 50px;
+}
+.container .image{
+    position: relative;
+    right: 180px;
+    bottom: 50px;
+}
+.container .image img{
+    height: 600px;
+    width: 550px;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    float: left;
+    position: relative;
+    left: 200px;
+}
+.container .skills{
+    height: 600px;
+    position: relative;
+    bottom: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .skills .soft{
+    width: 600px;
+}
+.container .skills .soft li{
+    text-align: justify;
+}
+.container .skills .soft h4{
+    text-align: center;
+    text-transform: uppercase;
+    color: #f9c349;
+    font-weight: bolder;
+}
+@media screen and (max-width: 768px){
+    main{
+        height: 1400px;
+    }
+    .container .skills{
+        height: 720px;
+    }
+    .container .image img{
+        width: 450px;
+    }
+}

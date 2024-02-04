@@ -1,0 +1,103 @@
+main{
+    height: 550px;
+    margin-top: 20px;
+}
+.card{
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+.card .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card .img .card-img-top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card .slide{
+    width: 500px;
+    height: 250px;
+    transition: 0.5s;
+}
+.card .slide.slide1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+}
+.card:hover .slide.slide1{
+    transform: translateY(0);
+}
+.card .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100px);
+  
+    border-radius: 10px;
+}
+.card:hover .slide.slide2{
+    transform: translateY(0);
+}
+.card .slide.slide2::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c73df;
+}
+.card .slide.slide2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+.card .slide.slide2 .content h5 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bolder;
+} 
+.card .slide.slide2 .content a {
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Console';
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    main{
+        height: 1050px;
+    }
+}

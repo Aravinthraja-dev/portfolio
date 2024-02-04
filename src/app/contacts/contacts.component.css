@@ -1,0 +1,44 @@
+main{
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+}
+main .getintouch{
+    height: 300px;
+    width: 600px;
+}
+main .contactform{
+    height: 300px;
+    width: 500px;
+}
+main .getintouch h1{
+    color: #f9c349;
+    padding-bottom: 10px;
+}
+main .contactform h1{
+    color: #f9c349;
+    padding-bottom: 10px;
+}
+main .contactform button{
+    height: 40px;
+    width: 150px;
+    background-color: #fcb900;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    border-color: #fcb900;
+}
+@media screen and (max-width: 768px){
+    main{
+        padding: 0;
+        margin: 0;
+        height: 800px;
+    }
+    main .contactform{
+        padding-top: 70px;
+    }
+    main .getintouch{
+        padding-top: 30px;
+    }
+   
+}
